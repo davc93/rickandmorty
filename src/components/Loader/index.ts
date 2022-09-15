@@ -1,5 +1,9 @@
-import { c } from "../../utils"
+
+
 import './index.css';
+function c(element:string){
+    return document.createElement(element);
+}
 export const Loader = () => {
     const loader = c('div');
     loader.classList.add('loader');
